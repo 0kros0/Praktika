@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mygrid{
+    /*подключаем сетку*/
+    display: grid;
+    grid-template-columns: 241px 241px 241px;
+    grid-template-rows: 90px 241px 241px 155px 155px 241px 241px 155px 155px 90px;
+    /* расстояние между строками*/
+    row-gap: 10px;
+    /* расстояние между колонками*/
+    column-gap: 20px;
+}
+img {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+    left: 5px;
+    width: 241px;
+    height: 241px;
+}
+.oblast_head {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #C4C4C4;
+    grid-template-columns: 100vh;
+    align-content: center;
+}
+.oblast_footer {
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #C4C4C4;
+    grid-template-columns: 100vh;
+    align-content: center;
+}
+.cube1 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #A2A9B7;
+    grid-template-columns: 100vh;
+    position: relative;
+    left: 5px;
+}
+.cube2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #A2A9B7;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+}
+.cube3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #A2A9B7;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+}
+.cube4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #E8EBED;
+    grid-template-columns: 100vh;
+    position: relative;
+    left: 5px;
+    font-size: 24px;
+}
+.cube5 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #E8EBED;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+    width: 251px;
+    font-size: 24px;
+}
+.cube6 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #90BCE8;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+    font-size: 24px;
+}
+.cube7 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #E8EBED;
+    grid-template-columns: 100vh;
+    position: relative;
+    left: 5px;
+    font-size: 24px;
+}
+.cube8 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #FEBF26;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+    font-size: 24px;
+}
+.cube9 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #E3EBD3;
+    grid-template-columns: 100vh;
+    position: relative;
+    left: 5px;
+    font-size: 24px;
+}
+.cube10 {
+    grid-row-start: 6;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #E3EBD3;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+    /*align-content: center;*/
+    font-size: 24px;
+}
+.cube11 {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #FFAA87;
+    grid-template-columns: 100vh;
+    position: relative;
+    left: 5px;
+    font-size: 24px;
+}
+.cube12 {
+    grid-row-start: 8;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #FFAA87;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+    font-size: 24px;
+}
+.cube13 {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #F55E62;
+    grid-template-columns: 100vh;
+    position: relative;
+    left: 5px;
+    font-size: 24px;
+}
+.cube14 {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #FFAA87;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+    width: 251px;
+    font-size: 24px;
+}
+.cube15 {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #C7ABD4;
+    grid-template-columns: 100vh;
+    position: relative;
+    right: 5px;
+    font-size: 24px;
+}
