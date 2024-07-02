@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"),
+        url("/Fonts/Roboto.woff2") format("woff2"),
+        url("/Fonts/Roboto.woff") format("woff"),
+        url("/Fonts/Robotothin.ttf") format('truetype');
+}
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+.ot_pr {
+    text-align: right;
+}
+.ot_lt {
+    text-align: left;
+}
+header {
+    font-size: 24px;
+    text-align: center;
+}
+footer {
+    font-size: 24px;
+    text-align: center;
+}
+.text1 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 38px;
+    margin-right: 50px;
+    line-height: 1.5
+}
+.text2 {
+    color: white;
+    font-size: 14px;
+    margin-top: 217px;
+    margin-left: 10px;
+}
+.text3 {
+    font-size: 14px;
+    text-align: start;
+}
+.text4 {
+    font-size: 14px;
+    margin-top: 207px;
+    margin-left: 10px;
+}
+.text5 {
+    font-size: 14px;
+    margin-top: 131px;
+    margin-left: 10px;
+}
+.img_text {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
