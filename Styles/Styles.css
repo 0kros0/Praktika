@@ -3,18 +3,8 @@ main {
     grid-template-columns: 241px 241px 241px;
     grid-template-rows: 90px 241px 241px 155px 155px 241px 241px 155px 155px 90px;
     row-gap: 10px;
-    column-gap: 20px;
+    column-gap: 10px;
     justify-content: center;
-}
-img {
-    grid-row-start: 7;
-    grid-row-end: 8;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 241px;
-    height: 241px;
-    margin-left: 5px;
-    margin-right: -5px;
 }
 header {
     grid-row-start: 1;
@@ -22,7 +12,6 @@ header {
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: #C4C4C4;
-    grid-template-columns: 100vh;
     align-content: center;
 }
 footer {
@@ -31,8 +20,34 @@ footer {
     grid-column-start: 1;
     grid-column-end: 4;
     background-color: #C4C4C4;
-    grid-template-columns: 100vh;
     align-content: center;
+}
+main {
+    display: grid;
+}
+img.image {
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 241px;
+    height: 241px;
+    position: relative;
+}
+img.image::after {
+    content: "❗"; /* Содержимое псевдоэлемента */
+    position: absolute;
+    border-top: 6px;
+    border-left: 6px;
+    transform: translate(50%, 50%);
+    opacity: 0; /* Начальное значение непрозрачности */
+    transition: opacity 0.3s; /* Анимация изменения значения непрозрачности */
+}
+img.image:hover {
+    filter: blur(4px);
+}
+img.image:hover::after {
+    opacity: 1; /* Показывать псевдоэлемент при наведении на изображение */
 }
 .cube1 {
     grid-row-start: 2;
@@ -40,10 +55,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: #A2A9B7;
-    grid-template-columns: 100vh;
     font-size: 18.11px;
-    margin-left: 5px;
-    margin-right: -5px;
+    padding: 10px;
 }
 .cube2 {
     grid-row-start: 2;
@@ -51,9 +64,8 @@ footer {
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #A2A9B7;
-    grid-template-columns: 100vh;
-    margin-left: -5px;
-    margin-right: 5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube3 {
     grid-row-start: 3;
@@ -61,9 +73,8 @@ footer {
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #A2A9B7;
-    grid-template-columns: 100vh;
-    margin-left: -5px;
-    margin-right: 5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube4 {
     grid-row-start: 4;
@@ -71,9 +82,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #E8EBED;
-    grid-template-columns: 100vh;
-    margin-left: 5px;
-    margin-right: -5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube5 {
     grid-row-start: 4;
@@ -81,9 +91,8 @@ footer {
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #E8EBED;
-    grid-template-columns: 100vh;
-    width: 251px;
-    margin-left: -5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube6 {
     grid-row-start: 4;
@@ -91,9 +100,8 @@ footer {
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #90BCE8;
-    grid-template-columns: 100vh;
-    margin-left: -5px;
-    margin-right: 5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube7 {
     grid-row-start: 5;
@@ -101,9 +109,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: #E8EBED;
-    grid-template-columns: 100vh;
-    margin-left: 5px;
-    margin-right: -5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube8 {
     grid-row-start: 5;
@@ -111,9 +118,8 @@ footer {
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #FEBF26;
-    grid-template-columns: 100vh;
-    margin-left: -5px;
-    margin-right: 5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube9 {
     grid-row-start: 6;
@@ -121,9 +127,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #E3EBD3;
-    grid-template-columns: 100vh;
-    margin-left: 5px;
-    margin-right: -5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube10 {
     grid-row-start: 6;
@@ -131,9 +136,7 @@ footer {
     grid-column-start: 2;
     grid-column-end: 4;
     background-color: #E3EBD3;
-    grid-template-columns: 100vh;
-    margin-left: -5px;
-    margin-right: 5px;
+    padding: 10px;
 }
 .cube11 {
     grid-row-start: 8;
@@ -141,9 +144,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #FFAA87;
-    grid-template-columns: 100vh;
-    margin-left: 5px;
-    margin-right: -5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube12 {
     grid-row-start: 8;
@@ -151,9 +153,8 @@ footer {
     grid-column-start: 2;
     grid-column-end: 4;
     background-color: #FFAA87;
-    grid-template-columns: 100vh;
-    margin-left: -5px;
-    margin-right: 5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube13 {
     grid-row-start: 9;
@@ -161,9 +162,8 @@ footer {
     grid-column-start: 1;
     grid-column-end: 2;
     background-color: #F55E62;
-    grid-template-columns: 100vh;
-    margin-left: 5px;
-    margin-right: -5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube14 {
     grid-row-start: 9;
@@ -171,9 +171,8 @@ footer {
     grid-column-start: 2;
     grid-column-end: 3;
     background-color: #FFAA87;
-    grid-template-columns: 100vh;
-    width: 251px;
-    margin-left: -5px;
+    padding: 10px;
+    align-content: end;
 }
 .cube15 {
     grid-row-start: 9;
@@ -181,7 +180,7 @@ footer {
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: #C7ABD4;
-    grid-template-columns: 100vh;
-    margin-left: -5px;
-    margin-right: 5px;
+    grid-template-columns: 100%;
+    padding: 10px;
+    align-content: end;
 }

@@ -3,58 +3,73 @@
     font-style: normal;
     font-weight: 400;
     src: local("Roboto"),
-        url("/Fonts/Roboto.woff2") format("woff2"),
-        url("/Fonts/Roboto.woff") format("woff"),
-        url("/Fonts/Robotothin.ttf") format('truetype');
+        url("../fonts/Roboto.woff2") format("woff2"),
+        url("../fonts/Roboto.woff") format("woff"),
+        url("../fonts/Robotothin.ttf") format('truetype');
 }
 body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 .ot_pr {
     text-align: right;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 20px 2px 0 2px;
 }
 .ot_lt {
     text-align: left;
+    font-size: 1em;
+    line-height: 1.2em;
+    margin: 20px 0 0 0;
+}
+.DR {
+    margin: 20px 0 0 0;
+}
+.PH {
+    margin: 20px 0 0 0;
 }
 header {
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
+    line-height: 20px;
 }
 footer {
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
+    line-height: 1.25em;
 }
 .text1 {
     color: white;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 38px;
-    margin-right: 50px;
-    line-height: 1.5
+    line-height: 1.635em;
+    margin: 0;
 }
 .text2 {
     color: white;
-    font-size: 14px;
-    margin-top: 217px;
-    margin-left: 10px;
+    font-size: 0.875em;
+    line-height: 1.25em;
+    margin: 0;
+    justify-content: end;
 }
 .text3 {
-    font-size: 14px;
-    text-align: start;
+    font-size: 0.875em;
+    line-height: 1.25em;
+    margin: 0;
 }
 .text4 {
-    font-size: 14px;
-    margin-top: 207px;
-    margin-left: 10px;
+    font-size: 0.875em;
+    line-height: 1.25em;
+    margin: 0;
 }
 .text5 {
-    font-size: 14px;
-    margin-top: 131px;
-    margin-left: 10px;
+    font-size: 0.875em;
+    line-height: 20px;
+    margin: 0;
 }
 .img_text {
     grid-row-start: 7;
     grid-row-end: 8;
     grid-column-start: 1;
     grid-column-end: 2;
+    line-height: 1.25em;
 }
