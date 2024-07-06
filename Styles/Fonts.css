@@ -12,14 +12,14 @@ body {
 }
 .ot_pr {
     text-align: right;
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 14px;
+    line-height: 19.07px;
     margin: 20px 2px 0 2px;
 }
 .ot_lt {
     text-align: left;
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 14px;
+    line-height: 19.07px;
     margin: 20px 0 0 0;
 }
 .DR {
@@ -29,47 +29,55 @@ body {
     margin: 20px 0 0 0;
 }
 header {
-    font-size: 1.5em;
+    font-size: 24px;
     text-align: center;
     line-height: 20px;
 }
 footer {
-    font-size: 1.5em;
+    font-size: 24px;
     text-align: center;
-    line-height: 1.25em;
+    line-height: 20px;
 }
 .text1 {
     color: white;
     text-align: center;
-    line-height: 1.635em;
+    line-height: 26.16px;
     margin: 0;
 }
 .text2 {
     color: white;
-    font-size: 0.875em;
-    line-height: 1.25em;
+    font-size: 14px;
+    line-height: 20px;
     margin: 0;
-    justify-content: end;
 }
 .text3 {
-    font-size: 0.875em;
-    line-height: 1.25em;
+    font-size: 14px;
+    line-height: 20px;
     margin: 0;
 }
 .text4 {
-    font-size: 0.875em;
-    line-height: 1.25em;
+    font-size: 14px;
+    line-height: 20px;
     margin: 0;
 }
 .text5 {
-    font-size: 0.875em;
+    font-size: 14px;
     line-height: 20px;
     margin: 0;
+}
+.text6 {
+    position: relative;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    left: 10px;
+    top: 221px;
 }
 .img_text {
     grid-row-start: 7;
     grid-row-end: 8;
     grid-column-start: 1;
     grid-column-end: 2;
-    line-height: 1.25em;
+    line-height: 20px;
 }
