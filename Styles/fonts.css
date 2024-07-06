@@ -79,5 +79,10 @@ footer {
     grid-row-end: 8;
     grid-column-start: 1;
     grid-column-end: 2;
+<<<<<<< HEAD:Styles/Fonts.css
     line-height: 20px;
 }
+=======
+    line-height: 1.25em;
+}
+>>>>>>> e51d1e99d46602fffd4d28613bb9bc411b856266:Styles/fonts.css
