@@ -1,3 +1,10 @@
+body {
+    grid-template-rows: min-content 1fr min-content;
+    height: 100%;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0;
+}
 main {
     display: grid;
     grid-template-columns: 241px 241px 241px;
@@ -7,33 +14,38 @@ main {
     justify-content: center;
 }
 header {
-    display: grid;
-    width: 768px;
+    min-width: 768px;
     height: 90px;
+    box-sizing: border-box;
     background-color: #C4C4C4;
     align-content: center;
-    margin: 10px 259px;
+    margin-bottom: 10px;
 }
 footer {
-    display: grid;
-    width: 768px;
+    min-width: 768px;
     height: 90px;
+    box-sizing: border-box;
     background-color: #C4C4C4;
     align-content: center;
-    margin: 10px 259px;
+    margin-top: 10px;
 }
-main {
-    display: grid;
-}
-.cube_img {
+.cube_after {
+    position: relative;
     grid-row-start: 6;
     grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 2;
+}
+.cube_img {
     background-image: url('../images/1.jpg');
     background-size: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    align-content: end;
 }
-.cube_img::after {
+.cube_after::after {
     display: grid;
     content: "!";
     font-size: 36px;
@@ -50,10 +62,10 @@ main {
     opacity: 0;
     transition: opacity 0.3s;
 }
-.cube_img:hover {
+.cube_after:hover .cube_img {
     filter: blur(4px);
 }
-.cube_img:hover::after {
+.cube_after:hover::after {
     opacity: 1;
 }
 .cube1 {
